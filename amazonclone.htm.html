@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon-like Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+        }
+
+        nav {
+            background-color: #232f3e;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        #amazonlogo img {
+            height: 50px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color:transparent;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            width: 100%;
+            
+            padding: 10px;
+            margin: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+            background-color: white;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #febd69;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            font-weight: bold;
+            
+        }
+
+        .search-bar button:hover {
+            background-color: #f3a847;
+
+        }
+
+        #offer {
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #ffffff;
+            padding: 5px 0;
+        }
+
+        #offer span {
+            margin: 10px;
+        }
+
+        #offer img {
+            height: 30px;;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        #offer img:hover {
+            transform: scale(1.1);
+        }
+
+        #main {
+            height: 600px;
+            background-image: url('https://www.hindustantimes.com/ht-img/img/2024/09/29/1600x900/Amazon_Sale_2024_1727593065689_1727593079226.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #232f3e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #febd69;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        #Home{
+            grid-row-end: ;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="amazonlogo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+        </div>
+        <div id="Home">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Feedback</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products, brands, and more...">
+            <button>Search</button>
+        </div>
+    </nav>
+
+  
+
+    <div id="offer">
+        <span><img src="https://pngimg.com/d/smartphone_PNG8501.png" alt="Smartphone"></span>
+        <span><img src="https://www.pngall.com/wp-content/uploads/1/Electronic.png" alt="Electronics"></span>
+        <span><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kitchen-mixer.png" alt="Kitchen Mixer"></span>
+        <span><img src="https://png.pngtree.com/png-vector/20230408/ourmid/pngtree-led-tv-television-screen-vector-png-image_6673700.png" alt="TV"></span>
+        <span><img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Prime_Video.png" alt="Prime Video"></span>
+        <span><img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/MX_Player_Logo.png" alt="MX Player"></span>
+        <span><img src="https://purepng.com/public/uploads/large/purepng.com-t-shirtclothingt-shirtfashion-dress-shirt-cloth-tshirt-631522326894filwv.png" alt="T-shirt"></span>
+        <span><img src="https://pngimg.com/uploads/headphones/headphones_PNG101978.png" alt="Headphones"></span>
+        <span><img src="https://seeklogo.com/images/A/amazon-fresh-logo-02542BA121-seeklogo.com.png" alt="Amazon Fresh"></span>
+        <span><img src="https://icons.veryicon.com/png/o/miscellaneous/all-blue-icon/more-327.png" alt="More"></span>
+    </div>
+
+    <div id="main">
+        Welcome to Amazon Sale!
+    </div>
+
+    <footer>
+        <p>@  All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
